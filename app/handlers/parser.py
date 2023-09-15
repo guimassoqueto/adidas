@@ -24,8 +24,6 @@ class AdidasParser:
         if not re.search('tênis', title, re.IGNORECASE): continue
         if not is_available: continue
 
-        if product['altText'].strip() == 'Tênis Adizero RC 4 Verde Homem Running': print(product)
-
         item = Item(
           url=urljoin("https://adidas.com.br", product["link"]),
           afiliate_url="",
