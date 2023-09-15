@@ -12,6 +12,7 @@ packages = [
 [tool.poetry.dependencies]
 python = "^3.11"
 pre-commit = "^3.4.0"
+pydantic = "^2.3.0"
 
 
 [build-system]
