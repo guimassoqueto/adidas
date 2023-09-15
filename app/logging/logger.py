@@ -3,7 +3,7 @@ from logging import Logger
 import logging
 
 
-def getLogger(name: str) -> Logger:
+def getLogger(name: str = __name__) -> Logger:
   formatter = logging.Formatter('%(asctime)s [%(name)s] %(levelname)s - %(message)s')
   logger_handler = logging.StreamHandler(stdout)
   logger_handler.setFormatter(formatter)

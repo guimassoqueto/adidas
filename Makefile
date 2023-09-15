@@ -9,3 +9,6 @@ env:
 # open repository on browser
 or:
 	open https://github.com/guimassoqueto/adidas
+
+a:
+	poetry run python main.py

@@ -15,6 +15,8 @@ pre-commit = "^3.4.0"
 pydantic = "^2.3.0"
 aiohttp-retry = "^2.8.3"
 aiohttp = "^3.8.5"
+psycopg = "^3.1.10"
+python-dotenv = "^1.0.0"
 
 
 [build-system]
