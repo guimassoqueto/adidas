@@ -13,6 +13,8 @@ packages = [
 python = "^3.11"
 pre-commit = "^3.4.0"
 pydantic = "^2.3.0"
+aiohttp-retry = "^2.8.3"
+aiohttp = "^3.8.5"
 
 
 [build-system]
