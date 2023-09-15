@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "adidas"
+version = "1.0.0"
+description = "Adidas"
+authors = ["guimassoqueto <gui.massoqueto@gmail.com>"]
+readme = "README.md"
+packages = [
+{include = "*.py"},
+{include = "app/**/*.py"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pre-commit = "^3.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
