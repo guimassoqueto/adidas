@@ -26,11 +26,13 @@ class AdidasParser:
 
         item = Item(
           url=urljoin("https://adidas.com.br", product["link"]),
-          afiliate_url="",
+          afiliate_url=urljoin("https://adidas.com.br", product["link"]), #TODO: obter link de afiliado adidas
           title=str(product["altText"]).replace("'", "''"),
           category=product['category'],
           image_url=str(product["image"]["src"]).replace("w_280,h_280", "w_1080,h_1080"),
           price=product["salePrice"],
+          reviews=0,
+          free_shipping=False,
           previous_price=product["price"],
           discount=discount
         )
