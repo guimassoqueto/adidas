@@ -20,9 +20,9 @@ class AdidasParser:
         # a api retorna items indisponiveis, isso garante que há ao menos um tamanho disponível
         is_available = len(product["availableSizes"]) > 1 
 
-        if discount < 40: continue
+        if discount < 20: continue
         if not re.search('tênis', title, re.IGNORECASE): continue
-        if re.search('infantil', title, re.IGNORECASE): continue
+        if re.search('Kids', title, re.IGNORECASE): continue
         if not is_available: continue
 
         item = Item(
