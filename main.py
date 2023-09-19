@@ -25,6 +25,6 @@ if __name__ == "__main__":
   logger.info("Inializing application...")
   try:
     result = run(main(CONCURRENCY_LIMIT))
-    if result: logger.info("Adidas items inserted.")
+    if result: logger.info("Completed.")
   except Exception as e:
     logger.error(e, stack_info=True)

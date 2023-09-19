@@ -12,3 +12,12 @@ or:
 
 a:
 	poetry run python main.py
+
+docker-build:
+	docker build -t guimas/adidas:latest . -f dev.Dockerfile --no-cache
+
+docker-run:
+	docker run -d --name test guimas/adidas:latest
+
+exec:
+	docker exec -it test bash

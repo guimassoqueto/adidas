@@ -20,3 +20,7 @@ class Item(BaseModel):
   price: float
   previous_price: float
   discount: int
+
+  @classmethod
+  def get_field_names(cls,alias=False):
+    return list(cls.model_json_schema(alias).get("properties").keys())
