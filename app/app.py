@@ -19,5 +19,5 @@ async def application(url, concurrency_limit: Semaphore) -> None:
   async with concurrency_limit:
     data = await AioHttpRetry.get_json(url)
     products = AdidasParser.get_products(data)
-    insert_products("items.csv", products)
+    await insert_products(products)
   
